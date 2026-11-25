@@ -16,6 +16,8 @@ Spot an issue in Navisworks Freedom, capture its model view, and keep the discus
 2. Extract the complete folder to a place you can write to, such as Documents.
 3. Double-click `BCF-Manager.exe` and open your model in Navisworks Freedom.
 
+> **Windows SmartScreen:** The app is currently unsigned, so Windows may display a warning on first launch. If you downloaded it from this repository’s official Releases and trust the source, select **More info → Run anyway** (*Weitere Informationen → Trotzdem ausführen*).
+
 Keep the extracted folder together. Your projects and issues are stored in its `data` folder. To move the app and your data to another computer, copy the whole folder.
 
 ## Made for everyday model reviews
