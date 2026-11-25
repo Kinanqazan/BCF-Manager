@@ -1,12 +1,9 @@
-name: Publish portable Windows download
+name: Build and publish portable release
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - downloads/BCF-Manager-Portable.zip
-      - .github/workflows/publish-release.yml
+    tags:
+      - "v*"
 
 permissions:
   contents: write
@@ -16,9 +13,14 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Publish portable ZIP
+
+      - name: Build app and portable ZIP
+        shell: pwsh
+        run: .\build.ps1 -OutputDirectory release
+
+      - name: Publish GitHub release
+        shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
-        shell: pwsh
         run: |
-          gh release create v1.0.0 downloads/BCF-Manager-Portable.zip --repo ${{ github.repository }} --title "BCF Manager 1.0.0" --notes "Portable Windows app. Download and extract the ZIP, then run BCF-Manager.exe. Includes the camera recognition files."
+          gh release create "$env:GITHUB_REF_NAME" "release/BCF-Manager-Portable.zip" --repo "${{ github.repository }}" --title "BCF Manager $env:GITHUB_REF_NAME" --generate-notes
