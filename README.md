@@ -37,4 +37,11 @@ Clone this repository on Windows, open PowerShell in the cloned folder, and run:
 
 The script builds `BCF-Manager.exe` and creates `dist\BCF-Manager-Portable.zip`. The ZIP contains the app and its OCR files; it does not include the local `data` folder or your issues.
 
-To publish a new downloadable version, push a new version tag (for example, `v1.0.1`). GitHub Actions will build the ZIP from that tagged source and attach it to a GitHub Release. The ZIP is kept as a release download, separate from the editable source files.
+To publish a new downloadable version after pushing your source changes, use the next unused version tag. For example:
+
+```powershell
+git tag v1.0.1
+git push origin v1.0.1
+```
+
+GitHub Actions will build the ZIP from that tagged source and attach it to a GitHub Release. The ZIP is kept as a release download, separate from the editable source files.
