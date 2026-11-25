@@ -27,7 +27,14 @@ Keep the extracted folder together. Your projects and issues are stored in its `
 
 BCF Manager runs beside Navisworks Freedom and keeps your project data on your computer.
 
+## Build and package from source
 
-## Source code
+Clone this repository on Windows, open PowerShell in the cloned folder, and run:
 
-The source files and camera-recognition resources are included in this repository. The portable release ZIP is ready to run without building from source.
+```powershell
+.\build.ps1
+```
+
+The script builds `BCF-Manager.exe` and creates `dist\BCF-Manager-Portable.zip`. The ZIP contains the app and its OCR files; it does not include the local `data` folder or your issues.
+
+To publish a new downloadable version, push a new version tag (for example, `v1.0.1`). GitHub Actions will build the ZIP from that tagged source and attach it to a GitHub Release. The ZIP is kept as a release download, separate from the editable source files.
