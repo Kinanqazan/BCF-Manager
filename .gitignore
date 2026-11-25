@@ -4,3 +4,6 @@
 *.bak
 /tools/*-probe.txt
 /tools/camera-accessibility.txt
+/dist/
+/release/
+/downloads/*.zip
