@@ -6,7 +6,9 @@
 
 Spot an issue in Navisworks Freedom, capture its model view, and keep the discussion with the issue. BCF Manager adds a simple project and issue list alongside Freedom, with BCF exchange and PDF reports.
 
-![BCF Manager issue list open alongside a model in Navisworks Freedom](docs/images/navisworks-freedom.png)
+| Projects | BCF Manager beside Navisworks Freedom |
+|:--:|:--:|
+| <img src="docs/images/project-list.png" alt="BCF Manager project list" height="360"> | <img src="docs/images/navisworks-freedom.png" alt="BCF Manager issue list open alongside a model in Navisworks Freedom" height="360"> |
 
 ## Get started
 
@@ -25,4 +27,3 @@ Keep the extracted folder together. Your projects and issues are stored in its `
 
 BCF Manager runs beside Navisworks Freedom and keeps your project data on your computer.
 
-<img src="docs/images/project-list.png" alt="BCF Manager project list" width="330">
