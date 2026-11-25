@@ -1,7 +1,6 @@
 /data/
 *.exe
+!/tools/ocr/tesseract.exe
 *.bak
-/tools/ocr/
-/tools/tessdata/
 /tools/*-probe.txt
 /tools/camera-accessibility.txt

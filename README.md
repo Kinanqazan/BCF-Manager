@@ -27,3 +27,8 @@ Keep the extracted folder together. Your projects and issues are stored in its `
 
 BCF Manager runs beside Navisworks Freedom and keeps your project data on your computer.
 
+
+## Edit the source
+
+The repository includes the camera OCR engine and its English language data. On Windows, run `.\build.ps1` in PowerShell to rebuild the app. Keep the `tools` folder beside `BCF-Manager.exe` when using the camera features. The `data` folder is created locally for each user's projects and issues.
+
