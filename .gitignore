@@ -1,0 +1,7 @@
+/data/
+*.exe
+*.bak
+/tools/ocr/
+/tools/tessdata/
+/tools/*-probe.txt
+/tools/camera-accessibility.txt
