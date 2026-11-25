@@ -27,7 +27,7 @@ Keep the extracted folder together. Your projects and issues are stored in its `
 
 BCF Manager runs beside Navisworks Freedom and keeps your project data on your computer.
 
-## Build and package from source
+## For developers: build and package from source
 
 Clone this repository on Windows, open PowerShell in the cloned folder, and run:
 
